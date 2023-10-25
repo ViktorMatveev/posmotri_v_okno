@@ -211,7 +211,7 @@ fieldset {
 }
 
 .more-button {
-  inline-size: 399px;
+  inline-size: 100%;
   min-block-size: 34px;
   margin-block-end: 1px;
 }
@@ -228,7 +228,7 @@ fieldset {
 /* CONTENT DETAILS */
 
 .content__details {
-  inline-size: 420px;
+  inline-size: 399px;
   block-size: 100%;
 }
 
@@ -269,6 +269,7 @@ fieldset {
 }
 
 .content__video-card {
+  padding: 2px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -304,6 +305,8 @@ fieldset {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  overflow: hidden;
+  white-space: wrap;
 }
 
 .content__video-card-description-container:active {
@@ -320,10 +323,6 @@ fieldset {
   text-transform: uppercase;
   margin-block-end: 6px;
   overflow: hidden;
-  white-space: wrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: wrap;
   text-overflow: ellipsis;
 }
 
@@ -334,8 +333,4 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
-}
-
-.preloader {
-  position: absolute;
 }
