@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -263,7 +265,7 @@ fieldset {
 .content__card-link {
   display: block;
   text-decoration: none;
-  padding: 2px;
+  margin: 2px;
 }
 
 .content__video-card {
