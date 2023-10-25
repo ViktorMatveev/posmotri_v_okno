@@ -79,7 +79,6 @@ ol {
   margin: 0 auto;
   object-fit: cover;
   object-position: center;
-  position: absolute;
 }
 
 /* SERCH FORM */
@@ -156,31 +155,18 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   display: inline-block;
-  vertical-align: top;
-  inline-size: 19px;
-  block-size: 19px;
-  background-color: transparent;
-  border: 1px solid;
-  cursor: pointer;
-  position: relative;
-}
-
-.search-form__pseudo-checkbox::before {
-  content: '';
-  position: absolute;
+  vertical-align: middle;
   inline-size: 15px;
   block-size: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  background-color: #fff;
-  opacity: 0;
+  background-color: transparent;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  cursor: pointer;
   transition: 0.2s;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  opacity: 1;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background-color: #fff;
 }
 
 .search-form__label-text {
@@ -213,7 +199,6 @@ fieldset {
 .more-button {
   inline-size: 100%;
   min-block-size: 34px;
-  margin-block-end: 1px;
 }
 
 .button:hover {
